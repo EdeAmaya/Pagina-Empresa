@@ -11,11 +11,11 @@
 }
 
 body{
-    background-color: #fff59d;
+    background-color: #ffffffdc;
 }
 
 .header{
-    background-color: #1b3039;
+    background-color: #44803f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ body{
 
 .header .nav-links a{
     font-size: 700;
-    color: #eceff1;
+    color: #ffffff;
     text-decoration: none;    
 }
 
@@ -81,7 +81,7 @@ body{
 footer{
     background: linear-gradient(to right, #00093c, #2d0b00);
     border-top-left-radius: 100px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -213,7 +213,7 @@ p.phone{
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
-	background:#fff;
+	background:#eceb89;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
