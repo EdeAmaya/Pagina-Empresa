@@ -15,7 +15,7 @@ body{
 }
 
 .header{
-    background-color: #44803f;
+    background-color: #005C6F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,7 @@ body{
 }
 
 .header .nav-links li a:hover{
-    color: #ffbc0e;
+    color: #5ff5c3;
 }
 
 .header .btn button{
@@ -73,124 +73,117 @@ body{
 
 .header .btn button:hover{
     background-color: #e2f1f8;
-    color: #ffbc0e;
+    color: #00AB71;
     transform: scale(1.1);
 }
 
+
+
+
+
 /*Footer*/
-footer{
-    background: linear-gradient(to right, #00093c, #2d0b00);
-    border-top-left-radius: 100px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer *{
-    color: white;
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 7%;
-}
-
-.footer-col{
-    width: 25%;
-}
-
-.footer-col h2{
-    font-optical-sizing: 1.7em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-p.email{
-    margin: 30px 0;
-}
-
-p.phone{
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.footer-col .text-office{
-    margin-bottom: 20px;
-}
-.underline{
-    width: 70px;
-    height: 3px;
+footer {
+    background-color: #005C6F;
     position: relative;
-    background-color: white;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.underline span{
-    width: 7px;
-    height: 100%;
-    position: absolute;
-    left: 10px;
-    background-color: rgb(63,63,63);
-    border-radius: 3px;
-    animation: moving 1.5s linear infinite;
-}
-
-@keyframes moving {
-    0%{
-        left: -20px;
-    }
-    100%{
-        left: 100%;
-    }
-}
-
-.footer-col ul{
-    list-style-type: none;
-    padding-top: 10px;
-}
-
-.footer-col ul li{
-    margin: 10px;
-}
-
-.footer-col form{
-    margin-top: 20px;
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
+    bottom: -150px;
+  }
+  
+  .piepag {
+    width: 100%;
+    padding: 70px 30px 20px;
     display: flex;
-}
-
-.footer-col form input{
-    width: 70%;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-}
-
-.footer-col form i{
-    font-size: 15px;
-}
-
-.footer-col .social-icons{
-    margin-top: 20px;
-}
-
-.footer-col .social-icons i{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .socialIcons {
+    width: 100%;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .socialIcons a {
+    text-decoration: none;
     padding: 10px;
     background-color: white;
-    color: #00093c;
+    margin: 10px;
     border-radius: 50%;
-    margin: 5px;
-}
+  }
+  
+  .socialIcons a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+  }
+  
+  /*Hover en los iconos*/
+  
+  .socialIcons a:hover {
+    background-color: #00AB71;
+    transition: 0.5s;
+  }
+  
+  .socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+  }
+  
+  /*Navegación del footer*/
+  
+  .footerNav {
+    margin: 30px;
+  }
+  
+  .footerB {
+    background-color: #025161;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footerB p {
+    color: white;
+  }
+  
+  .diseño {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  
+  @media (max-width: 700px) {
 
-.footer-para{
-    max-width: 250px;
-}
+    footer {
+        background-color: #000;
+        position: relative;
+        bottom: -100px;
+      }
+
+    .footerNav ul {
+      flex-direction: column;
+    }
+  
+    .footerNav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+    }
+  
+    @media (max-width: 1440px) {
+      .footerNav ul {
+        flex-direction: column;
+      }
+  
+      .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+      }
+    
+    }
+  }
 
 /*Cards*/
 .container-card{
@@ -213,7 +206,7 @@ p.phone{
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
-	background:#eceb89;
+	background:#9dddc8;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
